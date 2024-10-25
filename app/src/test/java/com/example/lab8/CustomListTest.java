@@ -70,6 +70,6 @@ public class CustomListTest {
         list.delete_city(city);
 
         // Assert there is 0 cities in the list
-        assertEquals(0, list.getCount()); // Should fail as delete city is not implemented
+        assertEquals(0, list.getCount());
     }
 }
