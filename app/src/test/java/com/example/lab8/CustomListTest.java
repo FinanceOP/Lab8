@@ -72,4 +72,20 @@ public class CustomListTest {
         // Assert there is 0 cities in the list
         assertEquals(0, list.getCount());
     }
+
+    @Test
+    public void countCitiesTest(){
+
+        // Create mock list
+        list = MockCityList();
+
+        // Assert the city count is currently 0
+        assertEquals(0, list.count_cities());  // Should fail as count citties is not implemented
+
+        // Add the new city to the list
+        list.addCity(new City("Estevan", "SK"));
+
+        // Assert that the city count is 1
+        assertEquals(1, list.count_cities());
+    }
 }
